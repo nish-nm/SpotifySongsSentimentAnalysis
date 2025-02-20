@@ -11,7 +11,7 @@ api_key = os.getenv("DATA_WORLD_API_KEY")
 class TestDataPipeline(unittest.TestCase):
     def test_kaggle_download_csv(self):
         # Test if Kaggle API call downloads CSV files successfully
-        destination_folder = "/home/runner/work/made-template/made-template/data/kaggle"
+        destination_folder = "/home/runner/work/SpotifySongsSentimentAnalysis/SpotifySongsSentimentAnalysis/data/kaggle"
         dataset_name = "artists.csv"
 
         # Check if CSV files are downloaded
@@ -20,7 +20,7 @@ class TestDataPipeline(unittest.TestCase):
 
     def test_kaggle_download_json(self):
         # Test if Kaggle API call downloads JSON files successfully
-        destination_folder = "/home/runner/work/made-template/made-template/data/kaggle"
+        destination_folder = "/home/runner/work/SpotifySongsSentimentAnalysis/SpotifySongsSentimentAnalysis/data/kaggle"
         dataset_name = "dict_artists.json"
 
         # Make sure the destination folder exists
@@ -35,7 +35,7 @@ class TestDataPipeline(unittest.TestCase):
 
     def test_csv_files_no_null_values(self):
         # Test if CSV files in the 'dataworld' subfolder have no null values
-        csv_folder = "/home/runner/work/made-template/made-template/data/dataworld"
+        csv_folder = "/home/runner/work/SpotifySongsSentimentAnalysis/SpotifySongsSentimentAnalysis/data/dataworld"
 
         for csv_file in os.listdir(csv_folder):
             if csv_file.endswith('.csv'):
@@ -45,7 +45,7 @@ class TestDataPipeline(unittest.TestCase):
 
     def test_csv_files_no_null_values(self):
         # Test if CSV files in the 'csv_data' subfolder have no null values
-        csv_folder = "/home/runner/work/made-template/made-template/data/kaggle"
+        csv_folder = "/home/runner/work/SpotifySongsSentimentAnalysis/SpotifySongsSentimentAnalysis/data/kaggle"
 
         for csv_file in os.listdir(csv_folder):
             if csv_file.endswith('.csv'):
