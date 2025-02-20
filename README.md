@@ -9,7 +9,7 @@ Correlation Analysis: Examine correlations between audio features (from Spotify 
 
 
 Further analysis is on report.ipynb or final-report.pdf
-(https://htmlpreview.github.io/?https://github.com/nish-nm/made-template/blob/main/project/final-report.html)
+(https://htmlpreview.github.io/?https://github.com/nish-nm/SpotifySongsSentimentAnalysis/blob/main/project/final-report.html)
 
 
 To replicate project please create an account on data.world and kaggle, you would need api keys for downloading datasets, otherwise you are free to use repective data files in ''/data/'' folder
